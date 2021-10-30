@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 
+
+
 export default (props) => {
   const [formData, setFormData] = React.useState(props.initial);
 
@@ -64,16 +66,15 @@ export default (props) => {
             className="form-control"
           />
         </div>
-        
         <button
-          className="btn btn-danger me-2 sub"
-          onClick={() => {
-            props.handleSubmit(formData);
-            setFormData(props.initial);
-          }}
-        >
-          SUBMIT
-        </button>
+                class="btn btn-secondary"
+                onClick={() => {
+                    props.handleSubmit(formData);
+                    setFormData(props.initial);
+                }}
+            >
+                SUBMIT
+            </button>
       </div>
     </>
   );

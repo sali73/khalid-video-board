@@ -90,7 +90,7 @@ const VideoUpload = () => {
   const handleEdit = async (data) => {
     setIsActive(true);
     const response = await fetch(
-      `http://localhost:3002/videos/${data._id}`,
+      `https://khalid-construction.herokuapp.com/videos/${data._id}`,
       {
         method: "PUT",
         headers: {
@@ -181,7 +181,7 @@ const VideoUpload = () => {
                 <td>{name}</td>
                 <td>{time}</td>
                 <td>
-                  <iframe src={video} width="300" height="300" title="myFrame" allow="autoplay"></iframe>
+                  <iframe src={video} width="200" height="200" title="myFrame" allow="autoplay"></iframe>
                 </td>
                 <td>{likes}</td>
                 <td>
