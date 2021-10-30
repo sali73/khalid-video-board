@@ -117,7 +117,7 @@ const VideoUpload = () => {
   };
   return (
     <div className="container-fluid">
-      <h1>Video Upload</h1>
+      <h1>NKBL Video Upload board</h1>
       <nav>
         {isActive ? (
           <article>
@@ -142,7 +142,6 @@ const VideoUpload = () => {
         )}
       </nav>
       <hr />
-      <h2>NKBL Video Upload List Board</h2>
       <span class="input">
         <input
           className="form-control form-control-lg"
@@ -153,6 +152,7 @@ const VideoUpload = () => {
         />
         <span></span>
       </span>
+      <h2>Video Upload List </h2>
       <table>
         <thead>
           <tr className="table-headers">
