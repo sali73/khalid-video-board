@@ -61,7 +61,7 @@ const VideoUpload = () => {
         body: JSON.stringify(data),
       }
     );
-
+    console.log(response)
     getInfo(); // Update the list
   };
 
@@ -99,7 +99,7 @@ const VideoUpload = () => {
         body: JSON.stringify(data),
       }
     );
-    console.log(data);
+    console.log(data, response);
     getInfo();
   };
 
@@ -181,7 +181,7 @@ const VideoUpload = () => {
                 <td>{name}</td>
                 <td>{time}</td>
                 <td>
-                  <iframe src={video} width="300" height="300" allow="autoplay"></iframe>
+                  <iframe src={video} width="300" height="300" title="myFrame" allow="autoplay"></iframe>
                 </td>
                 <td>{likes}</td>
                 <td>
@@ -192,6 +192,14 @@ const VideoUpload = () => {
                     }}
                   >
                     DELETE
+                  </button>
+                  <button
+                    className="btn btn-danger me-2"
+                    onClick={() => {
+                      handleSelect(item);
+                    }}
+                  >
+                    Edit
                   </button>
                 </td>
               </tr>
