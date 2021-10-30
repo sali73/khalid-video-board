@@ -66,15 +66,17 @@ export default (props) => {
             className="form-control"
           />
         </div>
+        
         <button
-                class="btn btn-secondary"
-                onClick={() => {
-                    props.handleSubmit(formData);
-                    setFormData(props.initial);
-                }}
-            >
-                SUBMIT
-            </button>
+          className="btn btn-danger me-2 sub"
+          onClick={() => {
+            props.handleSubmit(formData);
+            setFormData(props.initial);
+          }}
+        >
+          SUBMIT
+        </button>
+        
       </div>
     </>
   );
